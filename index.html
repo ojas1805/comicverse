@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ComicVerse Hub | Your Ultimate Comic Destination</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">ComicVerse</span>
+                <span class="logo-accent">HUB</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="browse.html" class="nav-link">Browse Comics</a></li>
+                <li><a href="cart.html" class="nav-link cart-link">
+                    Cart <span class="cart-count" id="cart-count-nav">0</span>
+                </a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Carousel -->
+    <section class="hero-carousel" id="hero-carousel">
+        <div class="carousel-container">
+            <div class="carousel-slide active">
+                <div class="slide-overlay"></div>
+                <img src="https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?w=1920&h=1080&fit=crop" alt="Spider-Man Hero" class="slide-image">
+                <div class="slide-content">
+                    <h1 class="slide-title">Amazing Spider-Man</h1>
+                    <p class="slide-description">The legendary web-slinger returns in the most epic adventure yet!</p>
+                    <a href="browse.html" class="btn btn-primary">Explore Now</a>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="slide-overlay"></div>
+                <img src="https://images.unsplash.com/photo-1608889476561-6242cfdbf622?w=1920&h=1080&fit=crop" alt="Marvel Comics" class="slide-image">
+                <div class="slide-content">
+                    <h1 class="slide-title">Marvel Universe</h1>
+                    <p class="slide-description">Discover the greatest superhero stories ever told</p>
+                    <a href="browse.html" class="btn btn-primary">Shop Marvel</a>
+                </div>
+            </div>
+            <div class="carousel-slide">
+                <div class="slide-overlay"></div>
+                <img src="https://images.unsplash.com/photo-1531259683007-016a7b628fc3?w=1920&h=1080&fit=crop" alt="DC Comics" class="slide-image">
+                <div class="slide-content">
+                    <h1 class="slide-title">DC Legends</h1>
+                    <p class="slide-description">Join the world's finest heroes in their greatest battles</p>
+                    <a href="browse.html" class="btn btn-primary">Shop DC</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-btn prev" id="carousel-prev">‹</button>
+        <button class="carousel-btn next" id="carousel-next">›</button>
+        <div class="carousel-indicators" id="carousel-indicators"></div>
+    </section>
+
+    <!-- New Releases -->
+    <section class="section new-releases">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">New Releases</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="comics-grid" id="new-releases-grid"></div>
+        </div>
+    </section>
+
+    <!-- Popular Series -->
+    <section class="section popular-series">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Popular Series</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="comics-grid" id="popular-series-grid"></div>
+        </div>
+    </section>
+
+    <!-- Publisher Spotlights -->
+    <section class="section publisher-spotlights">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Publisher Spotlights</h2>
+                <div class="title-underline"></div>
+            </div>
+            <div class="publishers-grid">
+                <div class="publisher-card" data-publisher="Marvel">
+                    <div class="publisher-overlay"></div>
+                    <img src="https://images.unsplash.com/photo-1635863138275-d9b33299680b?w=600&h=400&fit=crop" alt="Marvel">
+                    <div class="publisher-content">
+                        <h3>Marvel Comics</h3>
+                        <p>Explore the Marvel Universe</p>
+                        <a href="browse.html?publisher=Marvel" class="btn btn-secondary">View Collection</a>
+                    </div>
+                </div>
+                <div class="publisher-card" data-publisher="DC">
+                    <div class="publisher-overlay"></div>
+                    <img src="https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?w=600&h=400&fit=crop" alt="DC">
+                    <div class="publisher-content">
+                        <h3>DC Comics</h3>
+                        <p>Join DC's Legendary Heroes</p>
+                        <a href="browse.html?publisher=DC" class="btn btn-secondary">View Collection</a>
+                    </div>
+                </div>
+                <div class="publisher-card" data-publisher="Image">
+                    <div class="publisher-overlay"></div>
+                    <img src="https://images.unsplash.com/photo-1601645191163-3fc0d5d64e35?w=600&h=400&fit=crop" alt="Image">
+                    <div class="publisher-content">
+                        <h3>Image Comics</h3>
+                        <p>Discover Independent Greatness</p>
+                        <a href="browse.html?publisher=Image" class="btn btn-secondary">View Collection</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">ComicVerse Hub</h3>
+                    <p class="footer-text">Your ultimate destination for the greatest comic book stories ever told.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse.html">Browse Comics</a></li>
+                        <li><a href="cart.html">Shopping Cart</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Publishers</h4>
+                    <ul class="footer-links">
+                        <li><a href="browse.html?publisher=Marvel">Marvel Comics</a></li>
+                        <li><a href="browse.html?publisher=DC">DC Comics</a></li>
+                        <li><a href="browse.html?publisher=Image">Image Comics</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ComicVerse Hub. A Portfolio Project by [Your Name]</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="comics.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

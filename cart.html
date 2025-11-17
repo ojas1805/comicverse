@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart | ComicVerse Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">ComicVerse</span>
+                <span class="logo-accent">HUB</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="browse.html" class="nav-link">Browse Comics</a></li>
+                <li><a href="cart.html" class="nav-link cart-link active">
+                    Cart <span class="cart-count" id="cart-count-nav">0</span>
+                </a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Cart Header -->
+    <section class="cart-header">
+        <div class="container">
+            <h1 class="page-title">Shopping Cart</h1>
+            <p class="page-subtitle">Review your comic collection</p>
+        </div>
+    </section>
+
+    <!-- Cart Content -->
+    <section class="section cart-section">
+        <div class="container">
+            <div class="cart-layout">
+                <!-- Cart Items -->
+                <div class="cart-items-container">
+                    <div id="cart-items"></div>
+                    <div id="empty-cart" style="display: none;">
+                        <div class="empty-cart-message">
+                            <h3>Your cart is empty</h3>
+                            <p>Looks like you haven't added any comics yet!</p>
+                            <a href="browse.html" class="btn btn-primary">Browse Comics</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cart Summary -->
+                <div class="cart-summary" id="cart-summary" style="display: none;">
+                    <h3 class="summary-title">Order Summary</h3>
+                    <div class="summary-row">
+                        <span>Subtotal (<span id="cart-item-count">0</span> items):</span>
+                        <span id="cart-subtotal">$0.00</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Shipping:</span>
+                        <span class="free-shipping">FREE</span>
+                    </div>
+                    <div class="summary-divider"></div>
+                    <div class="summary-row summary-total">
+                        <span>Total:</span>
+                        <span id="cart-total">$0.00</span>
+                    </div>
+                    <button class="btn btn-primary btn-large btn-block" id="checkout-btn">
+                        Proceed to Checkout
+                    </button>
+                    <a href="browse.html" class="btn btn-secondary btn-large btn-block">Continue Shopping</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Checkout Modal -->
+    <div class="modal" id="checkout-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Order Confirmed!</h2>
+            </div>
+            <div class="modal-body">
+                <div class="success-icon">✓</div>
+                <p>Thank you for your simulated order!</p>
+                <p class="modal-subtitle">Your comics are on their way to your collection.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary btn-large" id="close-modal-btn">Continue Shopping</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">ComicVerse Hub</h3>
+                    <p class="footer-text">Your ultimate destination for the greatest comic book stories ever told.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse.html">Browse Comics</a></li>
+                        <li><a href="cart.html">Shopping Cart</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Publishers</h4>
+                    <ul class="footer-links">
+                        <li><a href="browse.html?publisher=Marvel">Marvel Comics</a></li>
+                        <li><a href="browse.html?publisher=DC">DC Comics</a></li>
+                        <li><a href="browse.html?publisher=Image">Image Comics</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ComicVerse Hub. A Portfolio Project by [Your Name]</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="comics.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>

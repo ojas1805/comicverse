@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comic Detail | ComicVerse Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">ComicVerse</span>
+                <span class="logo-accent">HUB</span>
+            </div>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="browse.html" class="nav-link">Browse Comics</a></li>
+                <li><a href="cart.html" class="nav-link cart-link">
+                    Cart <span class="cart-count" id="cart-count-nav">0</span>
+                </a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Comic Detail -->
+    <section class="section comic-detail">
+        <div class="container">
+            <div class="breadcrumb">
+                <a href="index.html">Home</a>
+                <span>/</span>
+                <a href="browse.html">Browse Comics</a>
+                <span>/</span>
+                <span id="breadcrumb-title">Comic Title</span>
+            </div>
+            <div class="detail-container">
+                <div class="detail-image-container">
+                    <div class="image-zoom-wrapper">
+                        <img id="comic-image" src="" alt="Comic Cover" class="detail-image">
+                        <div class="zoom-overlay"></div>
+                    </div>
+                </div>
+                <div class="detail-info">
+                    <h1 class="detail-title" id="comic-title">Comic Title</h1>
+                    <div class="detail-meta">
+                        <span class="meta-item" id="comic-publisher">Publisher</span>
+                        <span class="meta-divider">•</span>
+                        <span class="meta-item" id="comic-character">Character</span>
+                    </div>
+                    <div class="detail-price" id="comic-price">$0.00</div>
+                    <div class="detail-description">
+                        <h3>Synopsis</h3>
+                        <p id="comic-description">Description</p>
+                    </div>
+                    <div class="detail-creators">
+                        <h3>Creators</h3>
+                        <div class="creators-list">
+                            <div class="creator-item">
+                                <span class="creator-role">Writer:</span>
+                                <span class="creator-name" id="comic-writer">Writer Name</span>
+                            </div>
+                            <div class="creator-item">
+                                <span class="creator-role">Artist:</span>
+                                <span class="creator-name" id="comic-artist">Artist Name</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail-additional">
+                        <div class="additional-item">
+                            <span class="additional-label">Release Date:</span>
+                            <span class="additional-value" id="comic-release">Date</span>
+                        </div>
+                        <div class="additional-item">
+                            <span class="additional-label">Genre:</span>
+                            <span class="additional-value" id="comic-genre">Genre</span>
+                        </div>
+                    </div>
+                    <div class="detail-actions">
+                        <button class="btn btn-primary btn-large" id="add-to-cart-btn">
+                            <span>Add to Cart</span>
+                        </button>
+                        <a href="browse.html" class="btn btn-secondary btn-large">Continue Shopping</a>
+                    </div>
+                    <div class="success-message" id="success-message" style="display: none;">
+                        ✓ Comic added to cart!
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">ComicVerse Hub</h3>
+                    <p class="footer-text">Your ultimate destination for the greatest comic book stories ever told.</p>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="browse.html">Browse Comics</a></li>
+                        <li><a href="cart.html">Shopping Cart</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4 class="footer-subtitle">Publishers</h4>
+                    <ul class="footer-links">
+                        <li><a href="browse.html?publisher=Marvel">Marvel Comics</a></li>
+                        <li><a href="browse.html?publisher=DC">DC Comics</a></li>
+                        <li><a href="browse.html?publisher=Image">Image Comics</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 ComicVerse Hub. A Portfolio Project by [Your Name]</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="comics.js"></script>
+    <script src="detail.js"></script>
+</body>
+</html>
